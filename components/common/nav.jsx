@@ -7,7 +7,7 @@ import { navLinks } from "@/constants";
 const Nav = () => {
   const pathname = usePathname();
   return (
-    <nav className="flex gap-8">
+    <nav className="flex gap-10">
       {navLinks.map((link, index) => {
         return (
           <Link
