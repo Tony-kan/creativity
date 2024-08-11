@@ -18,7 +18,7 @@ const MobileNav = () => {
         {/* logo */}
         <div className="mt-32 mb-40 text-center text-xl">
           <Link href="/">
-            <h1 className="text-4xl font-extrabold">Logo</h1>
+            <h1 className="text-4xl font-extrabold text-accent capitalize">Creativity</h1>
           </Link>
         </div>
         {/* nav */}
