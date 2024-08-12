@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Button } from "../ui/button";
 
-import Nav from "./Nav";
+import Nav from "./nav";
 import MobileNav from "./mobile-nav";
 
 const Header = () => {
@@ -10,7 +10,9 @@ const Header = () => {
       <div className="container mx-auto flex justify-between items-center">
         {/* logo */}
         <Link href="/">
-          <h1 className="text-5xl font-extrabold text-accent capitalize">creativity</h1>
+          <h1 className="text-5xl font-extrabold text-accent capitalize">
+            creativity
+          </h1>
         </Link>
 
         {/* desktop  nav & hire me btn*/}
