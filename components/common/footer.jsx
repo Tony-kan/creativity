@@ -1,5 +1,5 @@
-import { MapPin } from 'lucide-react';
-import { PhoneCall ,Mail,MoveRight } from 'lucide-react';
+
+import { PhoneCall ,Mail,BookOpenText,Binoculars,Bean ,MapPin,Tractor } from 'lucide-react';
 import Link from 'next/link';
 
 const footer = () => {
@@ -12,13 +12,13 @@ const footer = () => {
               </div>
               <div className=" ">
                 <h1 className="leading-2 text-white "> 
-                  <span className="text-800 font-semibold ">Established in July 2013</span>, <br></br>
+                  <span className="text-800 font-semibold text-black ">Established in July 2013</span> <br></br>
                   Creativity unites young, innovative entrepreneurs in agricultural enterprise.<br></br>
-                   <span className="text-800 font-semibold ">Registered in Malawi under Business No. 164077</span>, <br></br>
-                   we collaborate with farmers, researchers,<br></br>
+                   <span className="text-800 font-semibold text-black ">Registered in Malawi under Business No. 164077</span> <br></br>
+                   we collaborate with farmers, researchers<br></br>
                     agro-processors, and input suppliers<br></br>
                    to drive agricultural diversity and growth. <br></br>
-                   Passionate about enhancing and diversifying agriculture,<br></br> 
+                   Passionate about enhancing and diversifying agriculture<br></br> 
                   we are committed to empowering the sector for a sustainable future.<br></br>
                   </h1>
               </div>
@@ -62,21 +62,18 @@ const footer = () => {
                 Our Services
               </div>
               <div className="">
-              <div>
-               <Link href="/">  <MoveRight /></Link>
+              <div className=" justify-center items-center">
+               <Link href="/" className="font-semibold text-white ">   <Tractor className="text-black" />Multiplication of Quality Seeds</Link>
               </div>
               <div>
-               <Link href="/">  <MoveRight /></Link>
+               <Link href="/" className="font-semibold text-white">   <Bean className="text-black"/> Supply quality Seeds</Link>
               </div>
               <div>
-               <Link href="/">  <MoveRight /></Link>
+               <Link href="/"className="font-semibold text-white">   <BookOpenText className="text-black" /> Farmers Consultation</Link>
               </div>
               <div>
-               <Link href="/">  <MoveRight /></Link>
+               <Link href="/"className="font-semibold text-white">  <Binoculars className="text-black"/> Conduct Researches</Link>
               </div>
-              <div>
-               <Link href="/">  <MoveRight /></Link>
-              </div> 
             </div>
               </div>
     </div>
