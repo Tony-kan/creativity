@@ -3,13 +3,18 @@ import Image from 'next/image'
 const page = () => {
   return (
     <div className="bg-inherit-400" >
-      <div className=" flex min-h-[100px]   p-6 border-b-2 justify-center items-center ">
-      <h1 className="flex text-2xl text-green-800 italic  font-semibold">The Art of Perfection in Seed Multiplication</h1>
+     <div
+        className="flex min-h-[100px] p-6 border-b-2 justify-center items-center bg-cover bg-center"
+        style={{ backgroundImage: "url('/assets/images/pexels.jpg')" }}
+      >
+        <h1 className="text-2xl text-black italic font-semibold">
+          The Art of Perfection in Seed Multiplication
+        </h1>
       </div>
 
    <div className=" flex min-h-[300px]   justify-between p-6  "  >
     <div className="relative z-10 justify- items-center   flex-shrink-0">
-      <Image src="/assets/images/slider2.jpg" alt="image" width="500" height="300"  className="min-h-[200px] object-cover" />
+      <Image src="/assets/images/slider2.jpg" alt="image" width="500" height="300" placeholder='blur' blurDataURL='/assets/images/slider2.jpg' className="min-h-[200px] object-cover rounded-sm" />
     </div>
     <div className="ml-6">
     <h2 className="text-2xl font-bold mb-2 flex flex-col justify-center ml-4 items-center ">Mission</h2>
@@ -28,13 +33,13 @@ const page = () => {
        </p>
    </div>
    <div className="relative z-10 justify- items-center   flex-shrink-0">
-     <Image src="/assets/images/consult.jpg" alt="image" width="400" height="50"  className="max-h-[400px] object-cover" />
+     <Image src="/assets/images/consult.jpg" alt="image" width="400" height="50" placeholder='blur' blurDataURL='/assets/images/consult.jpg'   className="max-h-[400px] object-cover rounded-sm" />
    </div>
   </div>
 
   <div className=" flex min-h-[300px]  items-center justify-between p-6 "  >
   <div className="relative z-10 justify- items-center   flex-shrink-0">
-     <Image src="/assets/images/farmer.jpg" alt="image" width="500" height="50"  className="  max-w-full max-h-[400px] object-cover" />
+     <Image src="/assets/images/farmer.jpg" alt="image" width="500" height="50" blurDataURL='/assets/images/farmer.jpg'  placeholder='blur'  className="  max-w-full max-h-[400px] object-cover" />
    </div>
    <div className="ml-6">
    <h2 className="text-2xl font-bold mb-2 flex flex-col justify-center ml-4 items-center  ">Core Values</h2>
@@ -66,7 +71,7 @@ const page = () => {
        </p>
    </div>
    <div className="relative z-10 justify- items-center   flex-shrink-0">
-     <Image src="/assets/images/slider1.jpg" alt="image" width="500" height="50"  className="max-h-[400px] object-cover" />
+     <Image src="/assets/images/slider1.jpg" alt="image" width="500" height="50"  placeholder='blur'  blurDataURL='/assets/images/slider1.jpg'  className="max-h-[400px] object-cover" />
    </div>
   </div>
 
@@ -81,7 +86,7 @@ const page = () => {
        </p>
    </div>
    <div className="relative z-10 justify- items-center   flex-shrink-0">
-     <Image src="/assets/images/sell.jpg" alt="image" width="500" height="50"  className="max-h-[400px] object-cover" />
+     <Image src="/assets/images/sell.jpg" alt="image" width="500" height="50"  placeholder='blur' blurDataURL='/assets/images/sell.jpg'   className="max-h-[400px] object-cover" />
    </div>
   </div>
 

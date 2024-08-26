@@ -62,8 +62,16 @@ const Services = () => {
 
   return (
     <div>
+      <div
+        className="flex min-h-[100px] p-6 border-b-2 justify-center items-center bg-cover bg-center"
+        style={{ backgroundImage: "url('/assets/images/nuts.jpg')" }}
+      >
+        <h1 className="text-2xl text-white italic font-semibold">
+          The Art of Perfection in Seed Multiplication
+        </h1>
+      </div>
       <div className="flex flex-col bg-lime-600 h-28">
-        <h1 className="font-extrabold text-4xl justify-center items-center flex">Contact Us</h1>
+        <h1 className="font-extrabold text-4xl justify-center items-center flex  mt-3">Contact Us</h1>
         <h2 className="flex justify-center items-center text-white font-medium">
           Give us a call or fill in the Contact form
         </h2>
@@ -173,15 +181,19 @@ const Services = () => {
                 <tbody>
                   <tr>
                     <td className="py-2 font-semibold">Phone:</td>
-                    <td className="py-2">+1 (123) 456-7890</td>
+                    <td className="py-2">(+265) 999330061 / (+265) 999886644</td>
                   </tr>
                   <tr>
                     <td className="py-2 font-semibold">Email:</td>
-                    <td className="py-2">info@example.com</td>
+                    <td className="py-2">creativity.mw@outlook.com</td>
                   </tr>
                   <tr>
-                    <td className="py-2 font-semibold">Address:</td>
-                    <td className="py-2">123 Main St, Anytown, USA</td>
+                    <td className=" font-semibold ">Address:</td>
+                    <td className="">TPIN: 30954285<br></br>
+                                         P.O. Box 1493, Lilongwe, Malawi<br></br>
+                                         P.O. Box 59, Lumbadzi, Malawi
+                                        
+                    </td>
                   </tr>
                 </tbody>
               </table>
