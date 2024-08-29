@@ -1,6 +1,7 @@
 "use client";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import Link from "next/link";
 
 const Services = () => {
   const workingHours = [
@@ -55,7 +56,7 @@ const Services = () => {
         (error) => {
           console.log("Failed to send email.", error.text);
           alert("Failed to send message. Please try again."); // Show an error message
-          form.current.reset();
+          
         }
       );
   };
@@ -185,7 +186,7 @@ const Services = () => {
                   </tr>
                   <tr>
                     <td className="py-2 font-semibold">Email:</td>
-                    <td className="py-2">creativity.mw@outlook.com</td>
+                    <td className="py-2"> <Link href="creativity.mw@outlook.com">creativity.mw@outlook.com</Link></td>
                   </tr>
                   <tr>
                     <td className=" font-semibold ">Address:</td>
