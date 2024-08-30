@@ -56,7 +56,6 @@ const Services = () => {
         (error) => {
           console.log("Failed to send email.", error.text);
           alert("Failed to send message. Please try again."); // Show an error message
-          
         }
       );
   };
@@ -64,7 +63,7 @@ const Services = () => {
   return (
     <div>
       <div
-        className="flex min-h-[100px] p-6 border-b-2 justify-center items-center bg-cover bg-center"
+        className="flex flex-col md:flex-row min-h-[100px] p-6 border-b-2 justify-center items-center bg-cover bg-center"
         style={{ backgroundImage: "url('/assets/images/nuts.jpg')" }}
       >
         <h1 className="text-2xl text-white italic font-semibold">
@@ -72,19 +71,24 @@ const Services = () => {
         </h1>
       </div>
       <div className="flex flex-col bg-lime-600 h-28">
-        <h1 className="font-extrabold text-4xl justify-center items-center flex  mt-3">Contact Us</h1>
-        <h2 className="flex justify-center items-center text-white font-medium">
+        <h1 className="font-extrabold text-2xl md:text-4xl justify-center items-center flex mt-3">
+          Contact Us
+        </h1>
+        <h2 className="flex justify-center items-center text-white font-medium text-sm md:text-base">
           Give us a call or fill in the Contact form
         </h2>
       </div>
       <div className="flex flex-col items-center">
-        <div className="flex flex-row w-full justify-between p-8">
+        <div className="flex flex-col md:flex-row w-full justify-between p-4 md:p-8">
           {/* Contact Form */}
-          <div className="w-1/2 p-4">
-            <h2 className="text-2xl font-semibold mb-4">Send Us a Message</h2>
-            <p className="mb-4">
-              Feel free to ask any questions over the phone, or get in touch via our contact form below.
-              Your message will be dispatched directly to our staff who will answer as soon as they can.
+          <div className="w-full md:w-1/2 p-4 order-2 md:order-1">
+            <h2 className="text-xl md:text-2xl font-semibold mb-4">
+              Send Us a Message
+            </h2>
+            <p className="mb-4 text-sm md:text-base">
+              Feel free to ask any questions over the phone, or get in touch via
+              our contact form below. Your message will be dispatched directly
+              to our staff who will answer as soon as they can.
             </p>
             <form
               ref={form}
@@ -174,26 +178,36 @@ const Services = () => {
             </form>
           </div>
 
-          <div className="flex flex-col w-1/3">
+          <div className="w-full md:w-1/3 p-4 order-1 md:order-2">
             {/* Contact Information Table */}
             <div className="p-4 border-4 mb-4">
-              <h2 className="text-2xl font-bold mb-4">Contact Information</h2>
-              <table className="w-full text-left">
+              <h2 className="text-xl md:text-2xl font-bold mb-4">
+                Contact Information
+              </h2>
+              <table className="w-full text-left text-sm md:text-base">
                 <tbody>
                   <tr>
                     <td className="py-2 font-semibold">Phone:</td>
-                    <td className="py-2">(+265) 999330061 / (+265) 999886644</td>
+                    <td className="py-2">
+                      (+265) 999330061 / (+265) 999886644
+                    </td>
                   </tr>
                   <tr>
                     <td className="py-2 font-semibold">Email:</td>
-                    <td className="py-2"> <Link href="creativity.mw@outlook.com">creativity.mw@outlook.com</Link></td>
+                    <td className="py-2">
+                      <Link href="mailto:creativity.mw@outlook.com">
+                        creativity.mw@outlook.com
+                      </Link>
+                    </td>
                   </tr>
                   <tr>
-                    <td className=" font-semibold ">Address:</td>
-                    <td className="">TPIN: 30954285<br></br>
-                                         P.O. Box 1493, Lilongwe, Malawi<br></br>
-                                         P.O. Box 59, Lumbadzi, Malawi
-                                        
+                    <td className="py-2 font-semibold">Address:</td>
+                    <td className="py-2">
+                      TPIN: 30954285
+                      <br />
+                      P.O. Box 1493, Lilongwe, Malawi
+                      <br />
+                      P.O. Box 59, Lumbadzi, Malawi
                     </td>
                   </tr>
                 </tbody>
@@ -202,8 +216,10 @@ const Services = () => {
 
             {/* Working Hours Table */}
             <div className="p-4 border-4">
-              <h2 className="text-2xl font-bold mb-4">Working Hours</h2>
-              <table className="w-full text-left">
+              <h2 className="text-xl md:text-2xl font-bold mb-4">
+                Working Hours
+              </h2>
+              <table className="w-full text-left text-sm md:text-base">
                 <thead>
                   <tr>
                     <th className="py-2">Day</th>
@@ -225,9 +241,13 @@ const Services = () => {
                         <td className="py-2">{close}</td>
                         <td className="py-2">
                           {isOpenNow(open, close) ? (
-                            <span className="text-green-500 font-bold">Open</span>
+                            <span className="text-green-500 font-bold">
+                              Open
+                            </span>
                           ) : (
-                            <span className="text-red-500 font-bold">Closed</span>
+                            <span className="text-red-500 font-bold">
+                              Closed
+                            </span>
                           )}
                         </td>
                       </tr>

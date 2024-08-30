@@ -42,7 +42,7 @@ const Page = () => {
               <CardContent className="flex">
                 <div className=" justify-center items-center flex-shrink-0">
                   <Image
-                    src="/assets/images/.jpg"
+                    src="/assets/images/slider2.jpg"
                     alt="Mission Image"
                     width="500"
                     height="300"
@@ -53,7 +53,7 @@ const Page = () => {
                   <h2 className="text-2xl font-bold mb-2 flex flex-col justify-center ml-4 items-center">
                     Mission
                   </h2>
-                  <p className="text-lg text-gray-700 font-semibold">
+                  <p className="font-extralight text-black">
                     To produce, multiply, process, distribute, and sell considerable quantities of quality seed to increase agricultural productivity among the farming communities.
                   </p>
                 </div>
@@ -67,7 +67,7 @@ const Page = () => {
               <CardContent className="flex">
                 <div className="relative z-10 justify-center items-center flex-shrink-0">
                   <Image
-                    src="/assets/images/.jpg"
+                    src="/assets/images/siyeni.jpg"
                     alt="Vision Image"
                     width="400"
                     height="200"
@@ -78,7 +78,7 @@ const Page = () => {
                   <h2 className="text-2xl font-bold mb-2 flex flex-col justify-center ml-4 items-center">
                     Vision
                   </h2>
-                  <p className="text-lg text-gray-700 font-semibold">
+                  <p className="font-extralight text-black">
                     To be the best provider of quality seed and associated services in the Malawi agricultural sector.
                   </p>
                 </div>
@@ -106,7 +106,7 @@ const Page = () => {
                   <h2 className="text-2xl font-bold mb-2 flex flex-col justify-center ml-4 items-center">
                     Core Values
                   </h2>
-                  <p className="text-lg text-gray-700 font-semibold">
+                  <p className="font-extralight text-black ">
                     • Purpose & Growth - our foundation is built on our purpose and provides a place for our team’s passion.<br />
                     • Trust – clear business deals, free fair, and without fraud.<br />
                     • Client Focus - a razor-sharp focus on our customer`s growth is our way to success.<br />
@@ -141,7 +141,7 @@ const Page = () => {
                   <h2 className="text-2xl font-bold mb-2 flex flex-col justify-center ml-4 items-center">
                     Notion Behind Creativity
                   </h2>
-                  <p className="text-lg text-gray-700 font-semibold">
+                  <p className="font-extralight text-black">
                     Creativity was formed by the coming together of creative young entrepreneurs involved in agricultural enterprising. 
                     Registered in Malawi in July 2013 under the Business Registration Act (Cap.46:02) with business No. 164077.
                     It brings in the participation of farmers, agricultural researchers, agro-processors, and input suppliers among others in the agricultural business.
@@ -172,11 +172,11 @@ const Page = () => {
                   <h2 className="text-2xl font-bold mb-2 flex flex-col justify-center ml-4 items-center">
                     What We Do
                   </h2>
-                  <p className="text-lg text-gray-700 font-semibold">
+                  <p className="font-extralight text-black">
                     Creativity is seriously engaged in the multiplication and supply of quality seeds of various classes including Basic and Certified (Commercial) Seed of the following legume and cereal varieties: <br />
-                    <span className="text-green-500">Soyabean:</span> Tikolore<br />
-                    <span className="text-red-700">Groundnut:</span> CG9, CG11, and Chalimbana 2005 (CG means Chitedze Groundnut)<br />
-                    <span className="text-purple-500">Beans:</span> NUA 45 (Rich in Iron & Zinc) and Sugar Bean Production (Chuma and Kholophethe Varieties).<br />
+                    <span className="text-green-500 font-semibold">Soyabean:</span> Tikolore<br />
+                    <span className="text-red-700 font-semibold">Groundnut:</span> CG9, CG11, and Chalimbana 2005 (CG means Chitedze Groundnut)<br />
+                    <span className="text-purple-500 font-semibold">Beans:</span> NUA 45 (Rich in Iron & Zinc) and Sugar Bean Production (Chuma and Kholophethe Varieties).<br />
                   </p>
                 </div>
               </CardContent>
