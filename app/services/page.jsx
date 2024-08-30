@@ -95,7 +95,7 @@ const Services = () => {
             {/* Text Container */}
             <div className="w-full md:w-1/2 p-4 md:p-6">
               <p className="font-extralight text-black text-sm md:text-base">
-                At [Company Name], our dedication to advancing agriculture extends beyond supplying high-quality seeds;
+                At Creativity, our dedication to advancing agriculture extends beyond supplying high-quality seeds;
                 we are also deeply invested in cutting-edge research. 
                 Our research initiatives focus on developing innovative agricultural solutions, 
                 optimizing seed performance, and exploring sustainable farming practices.

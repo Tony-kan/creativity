@@ -1,83 +1,118 @@
-
-import { PhoneCall ,Mail,BookOpenText,Binoculars,Bean ,MapPin,ArrowBigRight} from 'lucide-react';
+import { PhoneCall, Mail, MapPin, ArrowBigRight } from 'lucide-react';
 import Link from 'next/link';
 
-const footer = () => {
+const Footer = () => {
   return (
-    <div  className="bg-zinc-500 ">
-    <div className=' flex flex-row gap-4 justify-between p-2  mt-5'>
-            <div className="p-4">
-              <div className='text-white font-semibold text-lg underline pr-16'>
-                About Us
-              </div>
-              <div className=" ">
-                <h1 className="leading-2 text-white "> 
-                  <span className="text-800 font-semibold text-black ">Established in July 2013</span> <br></br>
-                  Creativity unites young, innovative entrepreneurs in agricultural enterprise.<br></br>
-                   <span className="text-800 font-semibold text-black ">Registered in Malawi under Business No. 164077</span> <br></br>
-                   we collaborate with farmers, researchers<br></br>
-                    agro-processors, and input suppliers<br></br>
-                   to drive agricultural diversity and growth. <br></br>
-                   Passionate about enhancing and diversifying agriculture<br></br> 
-                  we are committed to empowering the sector for a sustainable future.<br></br>
-                  </h1>
+    <footer className="bg-zinc-500">
+      {/* Main container with a row layout and padding */}
+      <div className="flex flex-row gap-4 justify-between p-4 mt-5">
+        
+        {/* About Us Section */}
+        <section className="p-4 w-1/4">
+          <div className="text-white font-semibold text-lg underline">
+            <Link href="/about">About Us</Link>
+          </div>
+          <div>
+            <h1 className="leading-7 text-white">
+              <span className="text-black font-semibold">Established in July 2013</span>
+              <br />
+              Creativity unites young, innovative entrepreneurs in agricultural enterprise.
+              <br />
+              <span className="text-black font-semibold">Registered in Malawi under Business No. 164077</span>
+              <br />
+              We collaborate with farmers, researchers,
+              <br />
+              agro-processors, and input suppliers
+              <br />
+              to drive agricultural diversity and growth.
+              <br />
+             
+            </h1>
+          </div>
+        </section>
+  
+        {/* Contact Us Section */}
+        <section className="p-4 w-1/4">
+          <div className="text-white font-semibold text-lg underline mt-5">
+            <Link href="/contact">Contact </Link>
+          </div>
+          <div className="flex flex-col justify-center">
+            {/* Each icon and text line wrapped together */}
+            <div className="flex items-center mt-4">
+              <PhoneCall className="mr-2" />
+              <div className="text-white">
+                Phones:
+                <br />
+                (+265) 999330061
+                <br />
+                (+265) 999886644
               </div>
             </div>
-            <div className="">
-              <div className='text-white font-semibold text-lg underline pl-16 mt-5 '>
+            <div className="flex items-center mt-4">
+              <Mail className="mr-2" />
+              <div className="text-white">
+                <Link href="mailto:creativity.mw@outlook.com">
+                  Email: creativity.mw@outlook.com
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+  
+        {/* Our Services Section */}
+        <section className="p-4 w-1/4">
+          <div className="text-white font-semibold underline mt-5">
+            <Link href="/services">Our Services</Link>
+          </div>
+          <div className="flex flex-col space-y-2">
+            {/* Each line has an arrow and text next to each other */}
+            <div className="flex items-center">
+              <ArrowBigRight className="mr-2" />
+              <div>Multiplication of Quality Seeds</div>
+            </div>
+            <div className="flex items-center">
+              <ArrowBigRight className="mr-2" />
+              <div>Supply Quality Seeds</div>
+            </div>
+            <div className="flex items-center">
+              <ArrowBigRight className="mr-2" />
+              <div>Farmers Consultation</div>
+            </div>
+            <div className="flex items-center">
+              <ArrowBigRight className="mr-2" />
+              <div>Conduct Researches</div>
+            </div>
+          </div>
+        </section>
+
+        {/* Quick Links Section */}
+        <section className="p-4 w-1/4">
+          <div className="text-white font-semibold text-lg underline mt-5">
+            Quick Links
+          </div>
+          <div className="flex flex-col space-y-2">
+            {/* List of quick links */}
+            <Link href="/" className="text-white">
+              Home
+            </Link>
+            <Link href="/about" className="text-white">
+              About Us
+            </Link>
+            <Link href="/services" className="text-white">
+              Our Services
+            </Link>
+            <Link href="/contact" className="text-white">
               Contact Us
-              </div>
-              <div className='flex flex-row justify-center relative '>
-                <div >
-                <MapPin className=" mt-1 "/>
-                <PhoneCall className="mt-48 " />
-                <Mail  className="mt-12 "/>
-                </div>
-                <h1 className='text-white  pl-4'>
-                    TPIN: 30954285<br></br>
-                    P.O. Box 1493,<br></br> Lilongwe,<br></br>
-                    P.O. Box 59,<br></br> Lumbadzi,<br></br> Malawi<br></br>
-                    Phones:<br></br> 
-                    (+265) 999330061 <br></br> 
-                    (+265) 999886644<br></br>
-                    <Link href="creativity.mw@outlook.com">Email:creativity.mw@outlook.com</Link> 
-                                    </h1>
-              </div>
-            </div>
-            <div className="">
-              <div className='text-white  font-semibold underline pl-16  mt-5'>
-                Our Services
-              </div>
-              <div  className='flex flex-row justify-center relative '>
-              <div className=" className='text-white  ">
-              <div className="flex  justify-center items-center">
-                <div className="flex flex-col">
-              <ArrowBigRight className=""/>
-              <ArrowBigRight className="mt-1"/>
-              <ArrowBigRight className="mt-2"/>
-              <ArrowBigRight className="mt-4"/>
-                </div>
-                <h1  className='text-white  pl-6 '>
-                <Link href="Muitiplication of Quality Seeds">Multiplication of Quality Seeds </Link> <br></br>
-                 <Link href="Supply quality Seeds">Supply quality Seeds</Link> <br></br>
-                 <Link href="Farmers Consultation">Farmers Consultation</Link> <br></br>
-                 <Link href="Conduct Researches">Conduct Researches</Link> <br></br>
-                </h1>
-            </div>
-            </div>
-              </div>
-       </div>
-    </div>
-    <div className="inline-flex items-center justify-center w-full">
-    <hr className="w-80 h-1 my-2 bg-gray-200 border-0 rounded dark:bg-gray-700"/>
-    </div>
-    <div className="flex flex-col  justify-center items-center mt-1 mb-8"> 
-     <h1 className=" font-semibold text-white text-lg mb-5">
-        <Link href="/"> CREATIVITY</Link>  
-    </h1>
+            </Link>
+            <Link href="/blog" className="text-white">
+              Blog
+            </Link>
+          </div>
+        </section>
+
       </div>
-    </div>
+    </footer>
   );
 };
 
-export default footer
+export default Footer;
