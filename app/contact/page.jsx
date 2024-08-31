@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Link from "next/link";
 
@@ -14,7 +14,6 @@ const Services = () => {
     { day: "Sunday", open: "Closed", close: "Closed" },
   ];
 
-  // Get the current day as a string (e.g., 'Monday')
   const currentDay = new Date().toLocaleDateString("en-US", {
     weekday: "long",
   });
@@ -35,9 +34,11 @@ const Services = () => {
   };
 
   const form = useRef();
+  const [isLoading, setIsLoading] = useState(false); 
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setIsLoading(true); 
 
     emailjs
       .sendForm(
@@ -49,13 +50,14 @@ const Services = () => {
       .then(
         (result) => {
           console.log("Email successfully sent!", result.text);
-          alert("Message sent successfully!"); // Show a success message
-
+          alert("Message sent successfully!"); 
           form.current.reset();
+          setIsLoading(false); 
         },
         (error) => {
           console.log("Failed to send email.", error.text);
-          alert("Failed to send message. Please try again."); // Show an error message
+          alert("Failed to send message. Please try again."); 
+          setIsLoading(false); 
         }
       );
   };
@@ -170,8 +172,9 @@ const Services = () => {
                   <button
                     className="bg-green-700 border-4 rounded-lg px-6 text-white"
                     type="submit"
+                    disabled={isLoading} // Disable button when loading
                   >
-                    Submit
+                    {isLoading ? "Sending..." : "Submit"} {/* Show loading text */}
                   </button>
                 </div>
               </div>
