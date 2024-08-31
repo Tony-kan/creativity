@@ -4,13 +4,16 @@ import emailjs from "@emailjs/browser";
 import Link from "next/link";
 
 const Services = () => {
+  const form = useRef();
+  const [isLoading, setIsLoading] = useState(false); // Initialize isLoading state
+
   const workingHours = [
     { day: "Monday", open: "07:30", close: "17:00" },
     { day: "Tuesday", open: "07:30", close: "17:00" },
     { day: "Wednesday", open: "07:30", close: "17:00" },
     { day: "Thursday", open: "07:30", close: "17:00" },
     { day: "Friday", open: "07:30", close: "17:00" },
-    { day: "Saturday", open: "10:00", close: "15:00" },
+    { day: "Saturday", open: "Closed", close: "Closed" },
     { day: "Sunday", open: "Closed", close: "Closed" },
   ];
 
@@ -33,12 +36,9 @@ const Services = () => {
     return currentTime >= openTime && currentTime <= closeTime;
   };
 
-  const form = useRef();
-  const [isLoading, setIsLoading] = useState(false); 
-
   const sendEmail = (e) => {
     e.preventDefault();
-    setIsLoading(true); 
+    setIsLoading(true); // Start loading when sending email
 
     emailjs
       .sendForm(
@@ -50,14 +50,14 @@ const Services = () => {
       .then(
         (result) => {
           console.log("Email successfully sent!", result.text);
-          alert("Message sent successfully!"); 
+          alert("Message sent successfully!");
           form.current.reset();
-          setIsLoading(false); 
+          setIsLoading(false); // Stop loading after success
         },
         (error) => {
           console.log("Failed to send email.", error.text);
-          alert("Failed to send message. Please try again."); 
-          setIsLoading(false); 
+          alert("Failed to send message. Please try again.");
+          setIsLoading(false); // Stop loading after failure
         }
       );
   };

@@ -1,4 +1,4 @@
-import { PhoneCall, Mail, MapPin, ArrowBigRight } from 'lucide-react';
+import { PhoneCall, Mail, ArrowBigRight } from 'lucide-react';
 import Link from 'next/link';
 
 const Footer = () => {
@@ -64,23 +64,23 @@ const Footer = () => {
           <div className="text-white font-semibold underline mt-5">
             <Link href="/services">Our Services</Link>
           </div>
-          <div className="flex flex-col space-y-2">
+          <div className="flex flex-col space-y-2  ">
             {/* Each line has an arrow and text next to each other */}
-            <div className="flex items-center">
+            <div className="flex items-center ">
               <ArrowBigRight className="mr-2" />
-              <div>Multiplication of Quality Seeds</div>
+              <div className="text-white">Multiplication of Quality Seeds</div>
             </div>
-            <div className="flex items-center">
+            <div className="flex items-center  ">
               <ArrowBigRight className="mr-2" />
-              <div>Supply Quality Seeds</div>
+              <div className="text-white">Supply Quality Seeds</div>
             </div>
-            <div className="flex items-center">
+            <div className="flex items-center ">
               <ArrowBigRight className="mr-2" />
-              <div>Farmers Consultation</div>
+              <div className="text-white" >Farmers Consultation</div>
             </div>
-            <div className="flex items-center">
+            <div className="flex items-center ">
               <ArrowBigRight className="mr-2" />
-              <div>Conduct Researches</div>
+              <div className="text-white">Conduct Researches</div>
             </div>
           </div>
         </section>

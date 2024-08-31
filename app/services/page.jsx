@@ -64,7 +64,7 @@ const Services = () => {
             {/* Text Container */}
             <div className="w-full md:w-1/2 p-4 md:p-6">
               <p className="font-extralight text-black text-sm md:text-base">
-                At [Company Name], we are committed to revolutionizing agriculture through the provision of top-quality seeds
+                At Creativity, we are committed to revolutionizing agriculture through the provision of top-quality seeds
                 that are meticulously sourced and rigorously tested to meet the highest standards.
                 Our extensive selection includes a diverse range of seeds tailored to various crops,
                 ensuring that farmers have access to the most resilient and high-yielding varieties available. 
